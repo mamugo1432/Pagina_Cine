@@ -1,6 +1,6 @@
 /*todo*/
 *{
-    margin: 0;
+    margin:0;
 }
 
 
@@ -9,8 +9,55 @@ header{
     background-color: rgb(124, 150, 219);
 }
 
+/*carrusel*/
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
 
+.carousel {
+    margin-left: 20%;
+    display: flex;
+    width: 240%;
+    transition: transform 0.5s ease-in-out;
+}
 
+.carousel img {
+    
+    width: 200%;
+    height: auto;
+}
+
+input[name="carousel"] {
+    display: none;
+}
+
+/* Control del cambio de imágenes con CSS */
+#slide1:checked ~ .carousel { transform: translateX(0); }
+#slide2:checked ~ .carousel { transform: translateX(-33.33%); }
+#slide3:checked ~ .carousel { transform: translateX(-66.66%); }
+
+/* Estilos para los botones de radio */
+.carousel-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-buttons label {
+    cursor: pointer;
+    background-color: #bbb;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+input[name="carousel"]:checked + label {
+    background-color: #db0000;
+}
 
 /*footer*/
 footer{
