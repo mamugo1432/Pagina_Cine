@@ -1,0 +1,20 @@
+header{
+    background-color: rgb(124, 150, 219);
+    
+}
+
+header .enlaces{
+    justify-items: center;
+    float: right;
+    gap: auto;
+
+}
+
+
+.card-text{
+    float: right;
+}
+
+footer{
+    background-color: rgb(124, 150, 219);
+}
