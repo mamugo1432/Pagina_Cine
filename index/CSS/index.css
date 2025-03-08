@@ -8,24 +8,41 @@
 header{
     background-color: rgb(124, 150, 219);
 }
+/*grid*/
+main {
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr; /* Define dos columnas: la primera ocupa 1 parte y la segunda ocupa 3 partes */
+    gap: 10px; /* Espacio entre las columnas */
+}
+
+.ratio {
+    width: 1000%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    height: 400px; /* Ajusta la altura para que el mapa sea visible y más grande */
+    max-width: 100%; /* Limita el ancho para que no se desborde */
+}
+
+
+
 
 /*carrusel*/
 .carousel-container {
     width: 60%;
-    margin: auto;
+    margin: 0;
     overflow: hidden;
     position: relative;
 }
 
 .carousel {
-    margin-left: 20%;
+    
+    margin-left: 2;
     display: flex;
     width: 240%;
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel img {
-    
+    margin-left :20px;
     width: 200%;
     height: auto;
 }
@@ -46,6 +63,7 @@ input[name="carousel"] {
 }
 
 .carousel-buttons label {
+    
     cursor: pointer;
     background-color: #bbb;
     width: 12px;
@@ -58,6 +76,17 @@ input[name="carousel"] {
 input[name="carousel"]:checked + label {
     background-color: #db0000;
 }
+
+/*main*/
+main section{
+    margin-left: 30%;
+}
+
+main aside{
+    width: 70%;
+    height: 40%;
+}
+
 
 /*footer*/
 footer{
