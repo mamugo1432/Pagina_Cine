@@ -19,12 +19,11 @@ header .enlaces{
     
 }
 
-.b,.c,.d{
+.a,.b,.c,.d{
     margin-left: 20px;
     margin-right: 10px;
-    background-color: rgb(106, 126, 245);
-    color: black;
-    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 /*main*/
