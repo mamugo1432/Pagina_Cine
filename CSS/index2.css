@@ -1,0 +1,124 @@
+/* Reset global de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Cabecera */
+header {
+    background-color: rgb(124, 150, 219);
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-height: 50px;
+}
+
+header .enlaces a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header .enlaces a:hover {
+    color: #0f1d68;
+}
+
+/* Carrusel */
+.carousel-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    width: 100%;
+    transition: transform 1s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .enlaces {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    header .enlaces a {
+        margin: 10px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .about-us {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    footer h5 {
+        font-size: 1em;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+            
