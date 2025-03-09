@@ -3,61 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Pagina_Cine/index/CSS/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index2.css">
     <title>www.MArgo.com</title>
 </head>
 <body>
     <header>
         <nav>
-         <img src="./img/MARGO.png" alt="logo">
+            <img src="/Pagina_Cine/index/img/MARGO.png" alt="logo" class="logo">
             <div class="enlaces">
-                <a href="./cartelera.html">cartelera</a>
-                <a href="">eventos</a>
-                <a href="./newsletter.html">newletter</a>
-                <a href="./preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                <a href="">Cartelera</a>
+                <a href="">Eventos</a>
+                <a href="/Pagina_Cine/newletter/newsletter.html">Newsletter</a>
+                <a href="">Preguntas Frecuentes</a>
             </div>
         </nav>
     </header>
+    
     <main>
-        <aside class="container mt-4">
-            <div class="col-md-4">
-                <h3 class="text-center">Nuestra Ubicación</h3>
-                <div class="ratio ratio-16x9">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093703!2d144.96305761531537!3d-37.81627974201406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5dfdfd3b9f%3A0x5045675218ce6e0!2sMelbourne%2C%20Australia!5e0!3m2!1ses!2ses!4v1614311630639!5m2!1ses!2ses" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+        <!-- Carrusel -->
+        <section class="carousel-container mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Pagina_Cine/img/Blancanieves.jpeg" class="d-block w-100" alt="Blancanieves">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Pagina_Cine/img/Capitan america.jpeg" class="d-block w-100" alt="Capitán América">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Pagina_Cine/img/Gladietor2.jpeg" class="d-block w-100" alt="Gladiador 2">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="/Pagina_Cine/img/En tierrra.jpeg" class="d-block w-100" alt="Blancanieves">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Pagina_Cine/img/mi amigo.jpeg" class="d-block w-100" alt="Capitán América">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Pagina_Cine/img/mikaela.jpeg" class="d-block w-100" alt="Gladiador 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Pagina_Cine/img/mufasa.jpeg" class="d-block w-100" alt="Gladiador 2">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </aside>
-        <section class="col-md-8">
-            <div class="carousel-container">
-                <!-- Radio buttons para controlar el carrusel -->
-                <input type="radio" name="carousel" id="slide1" checked>
-                <input type="radio" name="carousel" id="slide2">
-                <input type="radio" name="carousel" id="slide3">
-            
-                <!-- Imágenes del carrusel -->
-                <div class="carousel">
-                    <img src="./img/Blancanieves.jpeg" alt="Imagen 1">
-                    <img src="./img/Capitan america.jpeg" alt="Imagen 2">
-                    <img src="./img/Gladietor2.jpeg" alt="Imagen 3" class="img3">
-                </div>
-            
-                <!-- Botones de navegación -->
-                <div class="carousel-buttons">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                </div>
+        </section>
+
+        <!-- Sobre nosotros -->
+        <section class="about-us mt-5">
             <h3>Sobre nosotros</h3>
-            <p>Somos una empresa dedicada al mundo cinematrografico, nos dedicamos a protectar pelicualas recientes para aquellas personas cinefilas que el cine para ellos es un <em>templo</em> , por lo que intentamos que disfrutas personas de todos las edades con nuestras maravillosas peliculas.</p>
+            <p>Somos una empresa dedicada al mundo cinematográfico, protegiendo las películas recientes para aquellos que consideran el cine como un <em>templo</em>. Nuestro objetivo es ofrecer una experiencia cinematográfica increíble para todas las edades.</p>
         </section>
     </main>
+
     <footer>
-        <h5>COPYTRiGHT</h5>
+        <h5>COPYRIGHT</h5>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
