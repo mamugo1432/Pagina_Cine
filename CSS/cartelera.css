@@ -45,7 +45,7 @@ h1{
 
 main {
     
-    max-width: 800px; /* Ancho máximo del bloque */
+    max-width: 800px;
     margin-left: 30%;
     margin-top: 60px;
     
@@ -58,20 +58,20 @@ main {
 }
 
 aside {
-    width: 30%; /* Ajusta el ancho de la imagen */
+    width: 30%; 
   
 }
 
 aside img {
     padding: 20px;
-    width: 100%; /* Hace que la imagen ocupe el ancho del aside */
-    border-radius: 8px; /* Bordes redondeados (opcional) */
+    width: 100%; 
+    border-radius: 8px; 
 }
 
 section {
     padding:20px;
-    float: left; /* Mantiene el texto alineado al lado de la imagen */
-    width: 70%; /* Ajusta el ancho del texto */
+    float: left; 
+    width: 70%; 
     font-size:18px ;
     line-height: 1.50;
 }
@@ -84,12 +84,12 @@ footer {
 /*botton*/
 
 .redondo {
-    background-color: #ffffff5b; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 15px 32px; /* Espaciado dentro del botón */
-    font-size: 16px; /* Tamaño de la fuente */
-    border: none; /* Sin borde */
-    border-radius: 0%; /* Haciendo los bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s; /* Animación para el cambio de color */
+    background-color: #ffffff5b; 
+    color: white;
+    padding: 15px 32px; 
+    font-size: 16px;
+    border: none; 
+    border-radius: 0%; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
   }
