@@ -13,44 +13,64 @@ header h1{
 
 
 
-/*main*/
 
-.col{
-    padding: 30px;
+/* Carrusel */
+/* Contenedor principal que alinea el contenido a la izquierda y el carrusel a la derecha */
+.principal {
+    display: flex;
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ajusta a la pantalla completa */
+    padding: 20px;
 }
 
-* {
+/* Sección de contenido (izquierda) */
+.contenido {
+    width: 60%; /* Ajusta el ancho del contenido */
+}
+
+/* Carrusel (derecha) */
+.carousel-container {
+    width: 35%; /* Ajusta el ancho del carrusel */
+    max-width: 400px;
+    padding-right: 20px; /* Espaciado del lado derecho */
+}
+
+
+/*main*/
+.container {
     margin: 0;
     padding: 0;
     
 }
 
-
-
-main {
-    
-    max-width: 800px;
-    margin-left: 30%;
-    margin-top: 60px;
-    
+h2{
+    margin-left: 20px;
+    padding: 10px;
 }
+
 .card {
     display: flex;
-    background: #dfe2f8;
-    flex-direction: row;
-    gap:20px;
+    flex-direction: column;
+    height: 100%; /* Asegura que todas tengan la misma altura */
 }
 
-aside {
-    width: 30%; 
-  
+.card aside img {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+    height: 400px; 
+    object-fit: cover;     
 }
 
-aside img {
-    padding: 20px;
-    width: 100%; 
-    border-radius: 8px; 
+.card .body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
 
 section {
     padding:20px;
@@ -60,9 +80,11 @@ section {
     line-height: 1.50;
 }
 /*footer*/
-footer {
-    background-color: rgb(124, 150, 219);
-    justify-content: center;
+footer{
+    margin-bottom: 0;
+}
+footer .text-body-secondary{
+    margin-left: 45%;
 }
 
 
