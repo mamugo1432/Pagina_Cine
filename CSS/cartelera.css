@@ -12,35 +12,6 @@ header h1{
 }
 
 
-
-
-/* Carrusel */
-/* Contenedor principal que alinea el contenido a la izquierda y el carrusel a la derecha */
-/* Contenedor principal con contenido a la izquierda y carrusel a la derecha */
-.contenedor-flex {
-    
-    display: flex;
-    justify-content: space-between; /* Separa el contenido del carrusel */
-    align-items: flex-start; /* Alinea el contenido arriba */
-    gap: 20px; /* Espaciado entre contenido y carrusel */
-    padding: 20px;
-}
-
-/* Sección de contenido (izquierda) */
-.contenedor-flex .contenido {
-
-    width: 65%; /* Ajusta el ancho */
-}
-
-/* Carrusel (derecha) */
-.contenedor-flex .carousel-container {
-    
-    width: 30%; /* Ajusta el ancho */
-    max-width: 400px;
-}
-
-
-
 /*main*/
 .container {
     margin: 0;
