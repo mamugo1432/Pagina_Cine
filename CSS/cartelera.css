@@ -1,30 +1,17 @@
 /*header*/
-header{
-    background-color: rgb(124, 150, 219);
-    
+header,.col .card, footer{
+    background-color: #c9c9c9;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-.logo{
-    margin-left: 100px;
-    padding: 40px;
-    width: 200px;
-    height: 80px;
+header em{
+    color:rgb(70, 33, 238);
 }
-
-header .enlaces{
-    color: black;
-    font-size: larger;
-    margin-top: 60px;
-    padding: 0;
-    float: right;
+header h1{
+    font-size: 5rem;
     
 }
 
-.a,.b,.c,.d{
-    margin-left: 20px;
-    margin-right: 10px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
+
 
 /*main*/
 
@@ -38,10 +25,7 @@ header .enlaces{
     
 }
 
-h1{
-    padding: 20px;
-    width: 20ppx;
-}
+
 
 main {
     
@@ -81,15 +65,4 @@ footer {
     justify-content: center;
 }
 
-/*botton*/
 
-.redondo {
-    background-color: #ffffff5b; 
-    color: white;
-    padding: 15px 32px; 
-    font-size: 16px;
-    border: none; 
-    border-radius: 0%; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-  }
