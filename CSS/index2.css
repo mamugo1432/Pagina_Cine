@@ -13,32 +13,18 @@ body {
 }
 
 /* Cabecera */
-header {
-    background-color: rgb(124, 150, 219);
-    padding: 15px;
+/*header*/
+header,.col .card, footer{
+    background-color: #c9c9c9;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header em{
+    color:rgb(70, 33, 238);
 }
-
-header .logo {
-    max-height: 50px;
+header h1{
+    font-size: 5rem;
+    
 }
-
-header .enlaces a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-}
-
-header .enlaces a:hover {
-    color: #0f1d68;
-}
-
 /* Carrusel */
 .carousel-container {
     width: 100%;
@@ -75,6 +61,12 @@ header .enlaces a:hover {
     height: 20px;
 }
 
+/*map*/
+#map {
+    height: 500px; /* Ajusta la altura del mapa */
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
 /* Estilo para pantallas más pequeñas */
 @media (max-width: 768px) {
     header nav {
@@ -112,13 +104,11 @@ header .enlaces a:hover {
         font-size: 1em;
     }
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #343a40;
-    color: white;
-    font-size: 1.2em;
-    margin-top: 30px;
+footer{
+    margin-bottom: 0;
 }
+footer .text-body-secondary{
+    margin-left: 45%;
+}
+
             
